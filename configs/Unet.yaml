@@ -1,0 +1,23 @@
+seed: 101
+debug: False # set debug=False for Full Training
+exp_name: 'Baselinev2'
+comment: 'Unet-efficientnet-b0'
+model_name: 'Unet'
+backbone: 'efficientnet-b0'
+train_bs: 32
+valid_bs: 32
+img_size: [320, 384]
+epochs: 20
+lr: 0.001
+scheduler: 'CosineAnnealingLR'
+min_lr: 0.000001
+T_max: int(30000/train_bs*epochs)+50
+T_0: 25
+warmup_epochs: 0
+wd: 0.000001
+n_accumulate: max(1, 32//train_bs)
+n_fold: 5
+num_classes: 3
+attention: None
+2.5D: Flase
+
