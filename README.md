@@ -7,7 +7,7 @@
 The overview of the SIA-Unet.
 
 This project is a pytorch implementation of **SIA-Unet: A Unet with Sequence Information
-for Gastrointestinal Tract Segmentation**
+for Gastrointestinal Tract Segmentation**, and this paper had accepted in PRICAI'2022.
 
 ## Installation
 
